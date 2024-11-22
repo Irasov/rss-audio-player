@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icons/radio.ico" type="image/x-icon">
+    <title>1.2-audio-player</title>
+</head>
+<body>
+    <div class="audio-player"></div>
+    <div class="wrapper">
+        <img class="wrapper__bg" src="assets/img/aventure.webp" alt="AdventureTime">
+        <header class="header">
+        </header>
+        <main class="mainpage"> 
+            <div class="mainpage__container">
+                <div class="player">
+                    <div class="player__body">
+                        <div class="player__cover _ibg">
+                            <img src="assets/img/aventure.webp" alt="" class="player__img">
+                        </div>
+                        <div class="player__title"></div>
+                        <div class="player__controls">
+                            <button class="button button__backward"></button>
+                            <button class="button button__play-pause _play"></button>
+                            <button class="button button__forward"></button>
+                        </div>
+                        <div class="player__timer">
+                            <div class="player__time">
+                                <div class="player__current-minutes">0</div>
+                                <span>:</span>
+                                <div class="player__current-seconds">00</div>
+                            </div>
+                            <span>&nbsp;/&nbsp;</span>
+                            <div class="player__time">
+                                <div class="player__minutes">1</div>
+                                <span>:</span>
+                                <div class="player__seconds">18</div>
+                            </div>
+                        </div>
+                        <div class="player__progress">
+                            <input type="range" value="0" min="0" max="${songs[numberSong].time}" step="1" class="progress-player">
+                        </div>
+                        <div class="player__volume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer__main">
+                        <a href="https://github.com/Irasov" class="footer__link" title="github.com" target="_blank">©2024 Irasov</a>
+                    </div>
+                    <div class="footer__rss">
+                        <a href="https://rs.school/courses/javascript-preschool-ru" class="footer__link" title="rss" target="_blank">
+                            <img src="assets/icons/rss.svg" alt="rss" class="footer__img">
+                        </a>
+                    </div>
+                </div>  
+        </footer>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
